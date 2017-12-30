@@ -1,5 +1,6 @@
 /*!
- * Bootstrap v3.3.6 (http://getbootstrap.com)
+ *
+ Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
@@ -4037,9 +4038,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #555;
+  /* color: #555; */
   cursor: default;
-  background-color: #fff;
+  background-color: #ddd;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
 }
@@ -4058,7 +4059,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   top: auto;
   left: auto;
 }
-@media (min-width: 768px) {
+@media (min-width: 300px) {
   .nav-tabs.nav-justified > li {
     display: table-cell;
     width: 1%;

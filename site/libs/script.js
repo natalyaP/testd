@@ -1,5 +1,9 @@
-$(document).ready(function() {
-  $("#menu-left").click(function() {
-    $(this).addClass("show");
-  });
-});
+$function() {
+     
+    if($("#hmt").attr("checked") == 'checked') { 
+        $('#hft').attr('checked', false);
+    }
+    if($("#hft").attr("checked") == 'checked') { 
+        $('#hmt').attr('checked', false);
+    }
+};

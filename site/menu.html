@@ -3,24 +3,27 @@
 	 <meta charset="utf-8" />
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <title>Expotest</title>
-		<!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> --> <!-- JQUERY -->
+		
 	  <!-- Таблица стилей Bootstrap -->
 	  <link href="libs/bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet">
 	  <!-- Основная таблица стилей -->
 	 <link href="css/style.css" type="text/css" rel="stylesheet">
+	 	<!-- Библиотека jQuery -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> --> <!-- JQUERY -->
+  <!-- <script src="libs/jquery-3.2.1.min.js"></script> -->
+  <script src="libs/bootstrap/js/bootstrap.js"></script>
+  <script src="libs/script.js"></script>
+
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top ">
+		<div class="  nav-logo">
+			<img class="nav-expo_logo" src="img/logo.png" alt="">
+			<div class="nav-expo_text"> EXPОTEST</div>
+		</div>
 
-		<input type="checkbox" id="hft" class="hidden-filter-ticker">
-<label class="btn-filter" for="hft">
-  <img src="img/flter.png" alt="">
-</label>
-<div class="hidden-filter">
-	<p>ghfjhf</p>
-
-</div>
-<!-- filter-->
+		
 
 			<!-- меню -->
 <input type="checkbox" id="hmt" class="hidden-menu-ticker">
@@ -30,7 +33,7 @@
   <span class="third"></span>
 </label>
 <div class="hidden-menu">
-	<ul class="nav nav-tabs">
+	<ul class="nav nav-tabs nav-justified">
 	  <li  class="active"><a data-toggle="tab" href="#panel1">Русский</a></li>
 	  <li ><a data-toggle="tab" href="#panel2">English</a></li>
 	</ul>
@@ -51,16 +54,24 @@
 
 </div>
 <!-- меню -->
+<!-- filter-->
+<input type="checkbox" id="hft" class="hidden-filter-ticker">
+<label class="btn-filter" for="hft">
+  <img src="img/flter.png" alt="">
+  <span class="first-line"></span>
+  <span class="second-line"></span>
+</label>
+<div class="hidden-filter">
+	<p>ghfjhf</p>
+
+</div>
 
 <!-- filter -->
 
 
 
 	</nav>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
-	<!-- Библиотека jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <!-- js файлы плагина fullpage -->
-  <script src="libs/bootstrap/js/bootstrap.js"></script>
 </body>
 </html>

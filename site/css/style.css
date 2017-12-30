@@ -172,13 +172,7 @@
 		padding: 10px;
 		
 } */
-@media only screen and (max-width: 55em) {
-  
-  .expo-tile {
-    
-     margin-top: 60px;
-  }
-}
+
   
  /* Move nav off screen, setup transitions */
 /*  nav {
@@ -305,15 +299,9 @@
   display: none;
 
 }
-/* body{
-	background: red;
 
-} */
 .btn-filter {
   color: #fff;
-	
-  /* background-color: #666; */
-  /* padding: 5px; */
   position: fixed;
   top: 5px;
   right: 10px;
@@ -321,35 +309,95 @@
   cursor: pointer;
   transition: right .40s;
   
-
-/* -webkit-transform: translateZ(0);
--webkit-backface-visibility: hidden; */
 }
 .btn-filter img {
   display: block;
   position: relative;
   height: 30px;
-  /* vertical-align: middle;
-  text-align: center; */
 }
 
+.btn-filter span {
+  display: block;
+  height: 4px;
+  background-color: #000;
+  margin: 12px 0 0;
+  transition: all .1s linear .20s;
+  position: relative;
+  opacity: 0;
+}
 .hidden-filter-ticker:checked ~ .hidden-filter{
-	box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
-	z-index: 7;
+  box-shadow: 0 0 0 99999px rgba(0, 0, 0, 0.8);
+  z-index: 7;
 }
 
 
 .hidden-filter-ticker:checked ~ .btn-filter {
 	
-  right: 20px;
+  right: 10px;
+  z-index: 8;
+  top:-20px;
 	
 }
 .hidden-filter-ticker:checked ~ .hidden-filter {
-  right: 100px;
+  right: 0px;
 
 }
-.hidden-filter-ticker:checked ~ .btn-filter img {
-  /* -webkit-transform: rotate(45deg); */
-  /* top: 8px; */
 
+.hidden-filter-ticker:checked ~ .btn-filter span.first-line {
+  opacity: 1;
+  -webkit-transform: rotate(45deg);
+  top: 8px;
+
+}
+.hidden-filter-ticker:checked ~ .btn-filter span.second-line {
+  -webkit-transform: rotate(-45deg);
+  top: -8px;
+  opacity: 1;
+}
+
+.nav-expo_text{
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+  vertical-align: middle;
+}
+.nav-logo{
+  
+  position: fixed;
+  vertical-align: middle;
+  right: 10%;
+  left: 10%;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-expo_logo{
+  height: 30px;
+}
+
+.tabs{
+  width: 40%;
+
+}
+
+@media only screen and (max-width: 320px) {
+  
+  .expo-tile {
+    
+     margin-top: 60px;
+  }
+
+  .hidden-menu{
+    width: 240px;
+  }
+  .hidden-menu-ticker:checked ~ .btn-menu {
+  
+  left: 250px;
+  
+}
+
+
+  
 }
